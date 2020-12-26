@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-12-26T16:22:26+03:30</updated><id>/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Another test markdown</title><link href="/markdown/2016/01/01/another-test-markdown.html" rel="alternate" type="text/html" title="Another test markdown" /><published>2016-01-01T00:00:00+03:30</published><updated>2016-01-01T00:00:00+03:30</updated><id>/markdown/2016/01/01/another-test-markdown</id><content type="html" xml:base="/markdown/2016/01/01/another-test-markdown.html">&lt;p&gt;Put the math expression within &lt;span&gt;$&lt;/span&gt;…$:&lt;/p&gt;
+
+&lt;p&gt;\(\LaTeX{}\)&lt;/p&gt;
+
+&lt;p&gt;$\Pi$&lt;/p&gt;
+
+&lt;p&gt;$ a * b = c ^ b $&lt;/p&gt;
+
+&lt;p&gt;$ 2^{\frac{n-1}{3}} $&lt;/p&gt;
+
+&lt;p&gt;$ \int_a^b f(x)\,dx. $&lt;/p&gt;
+
+&lt;p&gt;\( \int_a^b f(x)\,dx. \)&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;$ \rho {\rm{FOD}} = \sum\limits{\sigma ,i} {(\delta _1 - \delta _2 n_i^\sigma )&lt;/td&gt;
+      &lt;td&gt;\phi _i^\sigma ({\bf{r}})&lt;/td&gt;
+      &lt;td&gt;^2} $&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;\\\\\\\\\\\$$ \rho {\rm{FOD}} = \sum\limits{\sigma ,i} {(\delta _1 - \delta _2 n_i^\sigma )&lt;/td&gt;
+      &lt;td&gt;\phi _i^\sigma ({\bf{r}})&lt;/td&gt;
+      &lt;td&gt;^2} $$&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Here is a liquid filter.&lt;/p&gt;
+
+&lt;p&gt;`escape inline code`&lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;inline code&lt;/code&gt;&lt;br /&gt;
+Here is a &lt;strong&gt;capture block&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;100 / 3 = 33&lt;/p&gt;
+
+&lt;p&gt;:+1:
+:bolivia:&lt;/p&gt;
+
+&lt;p&gt;⁣1. 21312&lt;br /&gt;
+⁣2. 21312&lt;br /&gt;
+⁣4. 4214&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;networkx&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nx&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;collections&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Counter&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;diagrams&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;defaultdict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;particle_counts&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;defaultdict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Counter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;neighbors&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;common_neighbors&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;items&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;# Build up the graph of connections between the
+&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;# common neighbors of a and b.
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;g&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Graph&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;neighbors&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;point_indices&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;nl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;query_point_indices&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;intersection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;neighbors&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add_edge&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;# Define the identifiers for a CNA diagram:
+&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;# The first integer is 1 if the particles are bonded, otherwise 2
+&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;# The second integer is the number of shared neighbors
+&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;# The third integer is the number of bonds among shared neighbors
+&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;# The fourth integer is an index, just to ensure uniqueness of diagrams
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;diagram_type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;point_indices&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;query_point_indices&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;diagram_type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;neighbors&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;number_of_edges&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;# If we've seen any neighborhood graphs with this signature,
+&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;# we explicitly check if the two graphs are identical to
+&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;# determine whether to save this one. Otherwise, we add
+&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;# the new graph immediately.
+&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;diagrams&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;isomorphs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;is_isomorphic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;diagrams&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]]&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;any&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;isomorphs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;isomorphs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;diagrams&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;diagrams&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;diagrams&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;diagrams&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;cna_signature&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;particle_counts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;update&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cna_signature&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;:&lt;/th&gt;
+      &lt;th&gt;:                  :&lt;/th&gt;
+      &lt;th&gt;: \\\\\\\\\\\$$O_3 + C_2H_2 \rightarrow \\\\\\\\\\\$$         :||&lt;/th&gt;
+      &lt;th&gt;:  \\\\\\\\\\\$$O_3 + C_2H_4 \rightarrow \\\\\\\\\\\$$ :||&lt;/th&gt;
+      &lt;th&gt;:       :&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;:  ^^ Method            :&lt;/th&gt;
+      &lt;th&gt;^^ \\\\\\\\\\\$$\lambda^a\\\\\\\\\\\$$&lt;/th&gt;
+      &lt;th&gt;vdW&lt;/th&gt;
+      &lt;th&gt;TS&lt;/th&gt;
+      &lt;th&gt;cycloadd.&lt;/th&gt;
+      &lt;th&gt;vdW&lt;/th&gt;
+      &lt;th&gt;TS&lt;/th&gt;
+      &lt;th&gt;cycloadd.&lt;/th&gt;
+      &lt;th&gt;^^ MAE&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;\\\\\\\\\\\$$\lambda\\\\\\\\\\\$$-tPBE&lt;/td&gt;
+      &lt;td&gt;0.20&lt;/td&gt;
+      &lt;td&gt;-0.40&lt;/td&gt;
+      &lt;td&gt;7.69&lt;/td&gt;
+      &lt;td&gt;-68.00&lt;/td&gt;
+      &lt;td&gt;-1.86&lt;/td&gt;
+      &lt;td&gt;4.87&lt;/td&gt;
+      &lt;td&gt;-57.57&lt;/td&gt;
+      &lt;td&gt;1.29&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;MC1H-PBE \\\\\\\\\\\$$^b\\\\\\\\\\\$$&lt;/td&gt;
+      &lt;td&gt;0.25&lt;/td&gt;
+      &lt;td&gt;-1.08&lt;/td&gt;
+      &lt;td&gt;3.66&lt;/td&gt;
+      &lt;td&gt;-70.97&lt;/td&gt;
+      &lt;td&gt;-1.25&lt;/td&gt;
+      &lt;td&gt;0.13&lt;/td&gt;
+      &lt;td&gt;-61.26&lt;/td&gt;
+      &lt;td&gt;3.35&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Reference values \\\\\\\\\\\$$^c\\\\\\\\\\\$$&lt;/td&gt;
+      &lt;td&gt;———&lt;/td&gt;
+      &lt;td&gt;-1.90&lt;/td&gt;
+      &lt;td&gt;7.74&lt;/td&gt;
+      &lt;td&gt;-63.80&lt;/td&gt;
+      &lt;td&gt;-1.94&lt;/td&gt;
+      &lt;td&gt;3.37&lt;/td&gt;
+      &lt;td&gt;-57.15&lt;/td&gt;
+      &lt;td&gt;———&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;td&gt;\\\\\\\\\\\$$^a\\\\\\\\\\\$$ The optimal mixing parameter.\\\\\\\\\\\$$~\\\\\\\\\\\$$ \\\\\\\\\\\$$^b\\\\\\\\\\\$$ From Ref. .\\\\\\\\\\\$$~\\\\\\\\\\\$$  \\\\\\\\\\\$$^c\\\\\\\\\\\$$ Best estimates from Ref. . |||||||&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;
+
+&lt;table class=&quot;custom-table&quot;&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;6&lt;/td&gt;
+      &lt;td&gt;7&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;spancell1     |&lt;/td&gt;
+      &lt;td&gt;spancell2  |&lt;/td&gt;
+      &lt;td&gt;cell&lt;/td&gt;
+      &lt;td&gt;spancell3 |&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;^^ spancell1   |&lt;/td&gt;
+      &lt;td&gt;spancell2  |&lt;/td&gt;
+      &lt;td&gt;cell&lt;/td&gt;
+      &lt;td&gt;spancell3 |&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;script&gt;
+|:-----:|:-----:|:-----:|:-----:|
+| \(0,0) | \(0,1) | \(0,2) | \(0,3) |
+|     \(1,0)    \|| ^^    | \(1,3) |
+&lt;/script&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;(0,0)&lt;/td&gt;
+      &lt;td&gt;(0,1)&lt;/td&gt;
+      &lt;td&gt;(0,2)&lt;/td&gt;
+      &lt;td&gt;(0,3)&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;(1,0)    |&lt;/td&gt;
+      &lt;td&gt;^^&lt;/td&gt;
+      &lt;td&gt;(1,3)&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;(0,0)&lt;/td&gt;
+      &lt;td&gt;(0,1)&lt;/td&gt;
+      &lt;td&gt;(0,2)&lt;/td&gt;
+      &lt;td&gt;(0,3)&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;(1,0)           ||&lt;/td&gt;
+      &lt;td&gt;(1,3)       |&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;(0,0)&lt;/td&gt;
+      &lt;td&gt;(0,1)&lt;/td&gt;
+      &lt;td&gt;(0,2)&lt;/td&gt;
+      &lt;td&gt;(0,3)&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;(1,0)           ||&lt;/td&gt;
+      &lt;td&gt;^^&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;(0,0)&lt;/td&gt;
+      &lt;td&gt;(0,1)&lt;/td&gt;
+      &lt;td&gt;(0,2)&lt;/td&gt;
+      &lt;td&gt;(0,3)&lt;/td&gt;
+      &lt;td&gt;\&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;(1,0)           ||&lt;/td&gt;
+      &lt;td&gt;^^&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;table&quot;&gt;Table&lt;/h1&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Stage&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Direct Products&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;ATP Yields&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Glycolysis&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;2 ATP                   |&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;^^&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;2 NADH&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;3–5 ATP&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Pyruvaye oxidation&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;2 NADH&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;5 ATP&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Citric acid cycle&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;2 ATP           |&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;^^&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;6 NADH&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;15 ATP&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;^^&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;2 FADH&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;3 ATP&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;30–32 ATP  ||&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;:             Here’s a Inline Attribute Lists example                 :|||&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;:       :&lt;/td&gt;
+      &lt;td&gt;:  &amp;lt;div style=&quot;color: red;&quot;&amp;gt; &amp;lt; Normal HTML Block &amp;gt; &amp;lt;/div&amp;gt; :||&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;^^&lt;/td&gt;
+      &lt;td&gt;Red    {: .cls style=&quot;background: orange&quot; }                ||&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;^^ IALs&lt;/td&gt;
+      &lt;td&gt;Green  {: #id style=&quot;background: green; color: white&quot; }    ||&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;^^&lt;/td&gt;
+      &lt;td&gt;Blue   {: style=&quot;background: blue; color: white&quot; }         ||&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;^^&lt;/td&gt;
+      &lt;td&gt;Black  {: color-style font-style}                          ||&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Heading&lt;/th&gt;
+      &lt;th&gt;Column 1&lt;/th&gt;
+      &lt;th&gt;Column 2&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Row 1&lt;/td&gt;
+      &lt;td&gt;Apple&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
+      &lt;td&gt;Orange&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Row 2 (merged)&lt;/td&gt;
+      &lt;td&gt;Blueberry&lt;/td&gt;
+      &lt;td&gt;Strawberry&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;^^&lt;/td&gt;
+      &lt;td&gt;[Plum](https://example.com)&lt;/td&gt;
+      &lt;td&gt;Raspberry ![](https://jekyllrb.com/img/octojekyll.png &quot;An exemplary image&quot;)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Not in table: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;Mail Gateway&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;In table:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Decision Point&lt;/th&gt;
+      &lt;th&gt;Design Decision&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Authoritative DNS MX Record&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;Mail Gateway&amp;gt;&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;9 * 9&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1 * 1 = 1&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1 * 2 = 2&lt;/td&gt;
+      &lt;td&gt;2 * 2 = 4&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1 * 3 = 3&lt;/td&gt;
+      &lt;td&gt;2 * 3 = 6&lt;/td&gt;
+      &lt;td&gt;3 * 3 = 9&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1 * 3 = 3&lt;/td&gt;
+      &lt;td&gt;2 * 3 = 6&lt;/td&gt;
+      &lt;td&gt;3 * 4 = 12&lt;/td&gt;
+      &lt;td&gt;4 * 4 = 16&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;emoji&quot;&gt;Emoji&lt;/h1&gt;
+&lt;p&gt;:+1:&lt;/p&gt;
+
+&lt;h1 id=&quot;mathjax&quot;&gt;Mathjax&lt;/h1&gt;
+
+&lt;p&gt;$\LaTeX{}$&lt;/p&gt;
+
+&lt;h1 id=&quot;plantuml&quot;&gt;PlantUML&lt;/h1&gt;
+
+&lt;p&gt;&lt;img class=&quot;plantuml&quot; src=&quot;http://www.plantuml.com/plantuml/svg/~h407374617274756d6c0a426f62202d3e20416c696365203a2068656c6c6f0a40656e64756d6c&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;video&quot;&gt;Video&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;//www.youtube.com/watch?v=Ptk_1Dc2iPY&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://avatars3.githubusercontent.com/hubot?v=3&amp;amp;s=40&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;//www.youtube.com/watch?v=Ptk_1Dc2iPY&quot;&gt;[video link]&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;special-media-links&quot;&gt;Special media links&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/devstories.webm&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=kCHGDRHZ4eU&quot;&gt;&lt;img src=&quot;https://i.imgur.com/bc9HOJU.png&quot; alt=&quot;w:1100&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Tips:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Use pipes (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;|&lt;/code&gt;) to delineate columns, and dashes to delineate the header row from the rest of the table.&lt;/li&gt;
+  &lt;li&gt;Spacing doesn’t matter to the markdown processor, any extra white space is removed, but it can really help with readability.
+The two markdown examples below both create this table.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Use pipes &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;(&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;)&lt;/code&gt; to delineate columns, and dashes to delineate the header row from the rest of the table.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Footnote &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="markdown" /><category term="test" /><summary type="html">Put the math expression within $…$:</summary></entry><entry><title type="html">Test markdown</title><link href="/markdown/2015/02/28/test-markdown.html" rel="alternate" type="text/html" title="Test markdown" /><published>2015-02-28T00:00:00+03:30</published><updated>2015-02-28T00:00:00+03:30</updated><id>/markdown/2015/02/28/test-markdown</id><content type="html" xml:base="/markdown/2015/02/28/test-markdown.html">&lt;p&gt;You can write regular &lt;a href=&quot;http://markdowntutorial.com/&quot;&gt;markdown&lt;/a&gt; here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to &lt;a href=&quot;http://markdowntutorial.com/&quot;&gt;take 5 minutes to learn how to write in markdown&lt;/a&gt; - it’ll teach you how to transform regular text into bold/italics/headings/tables/etc.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Here is some bold text&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;here-is-a-secondary-heading&quot;&gt;Here is a secondary heading&lt;/h2&gt;
+
+&lt;p&gt;Here’s a useless table:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Number&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Next number&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Previous number&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Five&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Six&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Four&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Ten&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Eleven&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Nine&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Seven&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Eight&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Six&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Two&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Three&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;One&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;How about a yummy crepe?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg&quot; alt=&quot;Crepe&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It can also be centered!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg&quot; alt=&quot;Crepe&quot; class=&quot;center-block&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here’s a code chunk:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var foo = function(x) {
+  return(x + 5);
+}
+foo(3)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And here is the same code with syntax highlighting:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And here is the same code yet again but with line numbers:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;boxes&quot;&gt;Boxes&lt;/h2&gt;
+&lt;p&gt;You can add notification, warning and error boxes like this:&lt;/p&gt;
+
+&lt;h3 id=&quot;notification&quot;&gt;Notification&lt;/h3&gt;
+
+&lt;p class=&quot;box-note&quot;&gt;&lt;strong&gt;Note:&lt;/strong&gt; This is a notification box.&lt;/p&gt;
+
+&lt;h3 id=&quot;warning&quot;&gt;Warning&lt;/h3&gt;
+
+&lt;p class=&quot;box-warning&quot;&gt;&lt;strong&gt;Warning:&lt;/strong&gt; This is a warning box.&lt;/p&gt;
+
+&lt;h3 id=&quot;error&quot;&gt;Error&lt;/h3&gt;
+
+&lt;p class=&quot;box-error&quot;&gt;&lt;strong&gt;Error:&lt;/strong&gt; This is an error box.&lt;/p&gt;</content><author><name></name></author><category term="markdown" /><category term="test" /><summary type="html">You can write regular markdown here and Jekyll will automatically convert it to a nice webpage. I strongly encourage you to take 5 minutes to learn how to write in markdown - it’ll teach you how to transform regular text into bold/italics/headings/tables/etc.</summary></entry></feed>
