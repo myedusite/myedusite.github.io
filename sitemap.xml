@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>/markdown/2015/02/28/test-markdown.html</loc>
+<loc>/objectoriented/2015/02/28/test-markdown1.html</loc>
 <lastmod>2015-02-28T00:00:00+03:30</lastmod>
 </url>
 <url>
-<loc>/markdown/2016/01/01/another-test-markdown.html</loc>
+<loc>/java/2016/01/01/another-test-markdown.html</loc>
 <lastmod>2016-01-01T00:00:00+03:30</lastmod>
 </url>
 <url>
@@ -16,9 +16,6 @@
 </url>
 <url>
 <loc>/categories.html</loc>
-</url>
-<url>
-<loc>/</loc>
 </url>
 <url>
 <loc>/</loc>
