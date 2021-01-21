@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>/java/test-markdown1</loc>
+<loc>http://blog.aminas.ir/java/test-markdown1</loc>
 <lastmod>2015-02-28T00:00:00+03:30</lastmod>
 </url>
 <url>
-<loc>/java/another-test-markdown</loc>
+<loc>http://blog.aminas.ir/java/another-test-markdown</loc>
 <lastmod>2016-01-01T00:00:00+03:30</lastmod>
 </url>
 <url>
-<loc>/about.html</loc>
+<loc>http://blog.aminas.ir/about.html</loc>
 </url>
 <url>
-<loc>/archives.html</loc>
+<loc>http://blog.aminas.ir/archives.html</loc>
 </url>
 <url>
-<loc>/categories.html</loc>
+<loc>http://blog.aminas.ir/categories.html</loc>
 </url>
 <url>
-<loc>/</loc>
+<loc>http://blog.aminas.ir/</loc>
 </url>
 <url>
-<loc>/tags.html</loc>
+<loc>http://blog.aminas.ir/tags.html</loc>
 </url>
 </urlset>
