@@ -95,7 +95,7 @@ html[data-header-transparent] header.site-header { position: fixed; }
 
 html[data-scroll-status='top'] header.site-header-transparent { height: 0; margin-top: 12px; background-color: transparent; transition: 0.1s height,background-color,box-shadow; }
 
-html[data-scroll-status='top'] header.site-header-transparent.site-header .site-brand-inner, html[data-scroll-status='top'] header.site-header-transparent.site-header .page-link { color: #fff; transition: 0.1s color; }
+html[data-scroll-status='top'] header.site-header-transparent.site-header .site-brand-inner, html[data-scroll-status='top'] header.site-header-transparent.site-header .page-link { color: #ffb404; transition: 0.1s color; font-weight: bold; }
 
 @media screen and (max-width: 800px) { html[data-scroll-status='top'] header.site-header-transparent.site-header .page-link { color: unset; } html[data-scroll-status='top'] header.site-header-transparent.site-header .menu-icon > svg { fill: #fdfdfd; } }
 
@@ -108,7 +108,7 @@ html[data-scroll-status='down'] header.site-header { top: -63.84px; }
 html[data-scroll-status='down'] .framework .sidebar { top: 20px; }
 
 /** Site header */
-.site-header { background-color: #ffffff; height: 63.84px; width: 100%; transition: height 0.2s, text-shadow 0.2s, top 0.2s; box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.06); position: sticky; position: -moz-sticky; /* <-- fix sticky compatibility issue */ position: -ms-sticky; position: -o-sticky; position: -webkit-sticky; align-self: flex-start; /* <-- fix the sticky not work issue */ transform: scale(0.9999); /* <-- fix the sticky x overflow issue */ top: 0; z-index: 1000; }
+.site-header { background-image: linear-gradient(to right, #ffb404, #FFB402); height: 63.84px; width: 100%; transition: height 0.2s, text-shadow 0.2s, top 0.2s; box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.06); position: sticky; position: -moz-sticky; /* <-- fix sticky compatibility issue */ position: -ms-sticky; position: -o-sticky; position: -webkit-sticky; align-self: flex-start; /* <-- fix the sticky not work issue */ transform: scale(0.9999); /* <-- fix the sticky x overflow issue */ top: 0; z-index: 1000; }
 
 .site-header > .wrapper { margin: 0 60px; padding: 0; max-width: 100%; transition: 0.2s margin; }
 
@@ -132,7 +132,7 @@ html[data-scroll-status='down'] .framework .sidebar { top: 20px; }
 
 .site-nav .menu-icon { display: none; }
 
-.site-nav .page-link { line-height: 1.6; color: black; transition: 0.1s ease-in-out; }
+.site-nav .page-link { line-height: 1.6; color: white; transition: 0.1s ease-in-out; }
 
 .site-nav .page-link:not(:last-child) { margin-right: 24px; }
 
@@ -141,7 +141,7 @@ html[data-scroll-status='down'] .framework .sidebar { top: 20px; }
 @media screen and (max-width: 800px) { .site-nav { position: absolute; top: 0; text-align: left; } .site-nav label[for="nav-trigger"] { display: block; z-index: 2; cursor: pointer; } .site-nav .menu-icon { display: block; float: right; text-align: center; } .site-nav .menu-icon > svg { fill: black; transition: 0.1s fill; } .site-nav input ~ .trigger { clear: both; display: none; border-radius: 3px; box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.06); } .site-nav input:checked ~ .trigger { display: block; background: #ffffff; } .site-nav .page-link { display: block; padding: 5px 10px; color: black; margin: 0 25px; } }
 
 /** Site footer */
-.site-footer { font-size: 14px; color: #404040; background-color: #f2f2f2; text-align: right; transition: background-color 0.2s; }
+.site-footer { font-size: 14px; color: white; text-align: right; transition: background-color 0.2s; background-image: linear-gradient(to right, #42104b, #421029); font-weight: bold; }
 
 .site-footer .site-footer-inner { transition: border-top 0.2s; padding: 54px 0; }
 
@@ -280,7 +280,7 @@ html[data-scroll-status='down'] .framework .sidebar { top: 20px; }
 
 .page-banner .page-banner-inner > *:first-child { margin: 0; }
 
-.page-banner .page-banner-inner > *:first-child > :nth-child(1) { font-size: 54.6px; letter-spacing: -1px; margin-bottom: 16px; font-weight: normal; transition: 0.2s all; }
+.page-banner .page-banner-inner > *:first-child > :nth-child(1) { font-size: 54.6px; letter-spacing: -1px; margin-bottom: 16px; font-weight: 500; transition: 0.2s all; color: #FFB42F; }
 
 @media screen and (max-width: 600px) { .page-banner .page-banner-inner > *:first-child > :nth-child(1) { font-size: 33.95px; } }
 
@@ -470,11 +470,11 @@ html[data-theme="dark"] .post-menu .post-menu-content ul a:hover { color: #fff !
 
 .common-list li:last-child { border-bottom: none; }
 
-.common-list li a { display: flex; justify-content: space-between; padding: 8px 12px; text-decoration: none; font-weight: normal; color: #454545; transition: background 0.2s; }
+.common-list li a { display: flex; justify-content: space-between; padding: 8px 12px; text-decoration: none; font-weight: normal; color: #42104b; transition: background 0.2s; }
 
 .common-list li a:hover { background-color: #eeeeee; }
 
-.common-list li span { font-size: 11.2px; display: inline-block; border-radius: 10px; align-self: center; background: #000000bd; padding: 0px 8px; margin-left: 20px; color: #fdfdfd; }
+.common-list li span { font-size: 11.2px; display: inline-block; border-radius: 10px; align-self: center; background: #42104b; padding: 0px 8px; margin-left: 20px; color: #fdfdfd; }
 
 /* OVERRIDE GOOGLE TRANSLATE WIDGET CSS BEGIN */
 div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value { vertical-align: top !important; /* Remove the down arrow */ /* when dropdown open */ /* after clicked/touched */ /* on page load (not yet touched or clicked) */ /* Remove span with left border line | (next to the arrow) in Chrome & Firefox */ /* Remove span with left border line | (next to the arrow) in Edge & IE11 */ }
